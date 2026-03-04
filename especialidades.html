@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Solutions - Especialidades</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra superior -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-left">
+                <i class="fas fa-phone-alt"></i>
+                <span class="phone-numbers">
+                    <span class="phone-item"><strong>Matriz:</strong> 098 4177 986 / 099 8122 320</span>
+                    <span class="phone-separator">|</span>
+                    <span class="phone-item"><strong>Sucursal:</strong> 099 7439 931</span>
+                </span>
+            </div>
+            <div class="top-bar-right">
+                <span class="email-top">
+                    <i class="far fa-envelope"></i> info@dentalsolutions.com
+                </span>
+                <a href="agendar.html" class="appointment-link">
+                    <i class="far fa-calendar-alt"></i> Agendar cita
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header con logo clickeable -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo-link">
+                <div class="logo-container">
+                    <h1 class="logo-dental"># Dental Solutions</h1>
+                    <p class="logo-vuelve">Vuelve a Sorrer</p>
+                </div>
+            </a>
+
+            <div class="mobile-menu-btn" id="mobileBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-links">
+                    <li><a href="staff1.html">Staff</a></li>
+                    <li><a href="especialidades.html" class="active">Especialidades</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="agendar.html" class="btn-agendar-nav">AGENDAR</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección principal con fondo azul y efecto parallax -->
+    <section class="especialidades-azul" id="parallax">
+        <div class="container">
+            <!-- Título de video (anotación verde) -->
+            <h2 class="video-titulo-blanco">Incluir vídeo de las instalaciones:</h2>
+            
+            <!-- Título SOMOS ESPECIALISTAS EN: -->
+            <h3 class="especialistas-titulo-blanco">SOMOS ESPECIALISTAS EN:</h3>
+            
+            <!-- Especialidades con iconos -->
+            <div class="especialidades-iconos-grid">
+                <!-- ENDODONCIA -->
+                <div class="especialidad-icono-item">
+                    <div class="icono-circulo">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <span>ENDODONCIA</span>
+                </div>
+                
+                <!-- ORTODONCIA INVISIBLE -->
+                <div class="especialidad-icono-item">
+                    <div class="icono-circulo">
+                        <i class="fas fa-teeth"></i>
+                    </div>
+                    <span>ORTODONCIA INVISIBLE</span>
+                </div>
+                
+                <!-- REHABILITACIÓN ORAL -->
+                <div class="especialidad-icono-item">
+                    <div class="icono-circulo">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <span>REHABILITACIÓN ORAL</span>
+                </div>
+                
+                <!-- IMPLANTOLOGÍA DIGITAL -->
+                <div class="especialidad-icono-item">
+                    <div class="icono-circulo">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <span>IMPLANTOLOGÍA DIGITAL</span>
+                </div>
+                
+                <!-- DISEÑO DE SONRISA -->
+                <div class="especialidad-icono-item">
+                    <div class="icono-circulo">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>DISEÑO DE SONRISA</span>
+                </div>
+                
+                <!-- ODONTOPEDIATRÍA -->
+                <div class="especialidad-icono-item">
+                    <div class="icono-circulo">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <span>ODONTOPEDIATRÍA</span>
+                </div>
+            </div>
+            
+            <!-- 4 servicios inferiores -->
+            <div class="servicios-azules-grid">
+                <div class="servicio-azul-item">ALINEADORES</div>
+                <div class="servicio-azul-item">DISEÑO DE SONRISA</div>
+                <div class="servicio-azul-item">SEDACIÓN ODONTOLÓGICA</div>
+                <div class="servicio-azul-item">IMPLANTOLOGÍA</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp flotante -->
+    <a href="https://wa.me/5984177986" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Menú móvil
+        document.getElementById('mobileBtn').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Efecto parallax
+        window.addEventListener('scroll', function() {
+            const parallax = document.getElementById('parallax');
+            let scrollPosition = window.pageYOffset;
+            parallax.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
+        });
+    </script>
+</body>
+</html>

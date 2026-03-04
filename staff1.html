@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Solutions - Conoce Nuestro Staff</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra superior -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-left">
+                <i class="fas fa-phone-alt"></i>
+                <span class="phone-numbers">
+                    <span class="phone-item"><strong>Matriz:</strong> 098 4177 986 / 099 8122 320</span>
+                    <span class="phone-separator">|</span>
+                    <span class="phone-item"><strong>Sucursal:</strong> 099 7439 931</span>
+                </span>
+            </div>
+            <div class="top-bar-right">
+                <span class="email-top">
+                    <i class="far fa-envelope"></i> info@dentalsolutions.com
+                </span>
+                <a href="agendar.html" class="appointment-link">
+                    <i class="far fa-calendar-alt"></i> Agendar cita
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header con logo clickeable -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo-link">
+                <div class="logo-container">
+                    <h1 class="logo-dental"># Dental Solutions</h1>
+                    <p class="logo-vuelve">Vuelve a Sorrer</p>
+                </div>
+            </a>
+
+            <div class="mobile-menu-btn" id="mobileBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-links">
+                    <li><a href="staff1.html" class="active">Staff</a></li>
+                    <li><a href="especialidades.html">Especialidades</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="agendar.html" class="btn-agendar-nav">AGENDAR</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal de staff1 -->
+    <section class="staff1-page">
+        <div class="container">
+            <div class="staff1-grid">
+                <!-- Lado izquierdo: Texto -->
+                <div class="staff1-left">
+                    <h1 class="staff1-main-title">NUESTRO STAFF</h1>
+                    <p class="staff1-main-subtitle">Profesionales altamente calificados a tu servicio</p>
+                    
+                    <p class="staff1-paragraph">
+                        Somos la mejor Clínica Dental conformada por profesionales de alta calidad y experiencia en Odontología.
+                    </p>
+                    
+                    <p class="staff1-paragraph">
+                        DentalSolutions se encarga de preservar la salud oral de sus pacientes en las distintas especialidades, a través de un correcto diagnóstico y un adecuado tratamiento.
+                    </p>
+                    
+                    <p class="staff1-paragraph">
+                        Nuestro principal objetivo es brindar un servicio integral, personalizado, confiable y garantizado.
+                    </p>
+                    
+                    <p class="staff1-paragraph">
+                        Contamos con instalaciones nuevas, confortables y tecnología de primera línea.
+                    </p>
+
+                    <a href="staff.html" class="staff1-button">
+                        <i class="fas fa-play"></i>
+                        Conoce a nuestros profesionales
+                    </a>
+                </div>
+
+                <!-- Lado derecho: Imagen -->
+                <div class="staff1-right">
+                    <img src="/img/staff.png" alt="Equipo DentalSolutions" class="staff1-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp flotante -->
+    <a href="https://wa.me/5984177986" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Menú móvil
+        document.getElementById('mobileBtn').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

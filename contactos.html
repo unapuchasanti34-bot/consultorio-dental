@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Solutions - Contactos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra superior -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-left">
+                <i class="fas fa-phone-alt"></i>
+                <span>Llamanos Matriz 0984177986 - 0998122320 / Sucursal 0997439931</span>
+            </div>
+            <span>dentalsolutions_correo@hotmail.com</span>
+            <a href="agendar.html" class="appointment-link">
+                Agendar cita <i class="far fa-calendar-alt"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Header con logo clickeable -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo-link">
+                <div class="logo-wrapper">
+                    <div class="logo">
+                        dental<span>so</span>
+                    </div>
+                    <div class="logo-sub">Dentalsolutions</div>
+                </div>
+            </a>
+
+            <div class="mobile-menu-btn" id="mobileBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-links">
+                    <li><a href="staff1.html">Staff</a></li>
+                    <li><a href="especialidades.html">Especialidades</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contactos.html" class="active">Contactos</a></li>
+                    <li><a href="agendar.html" class="btn-agendar-nav">AGENDAR</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Título principal -->
+    <section class="titulo-principal">
+        <div class="container">
+            <h2>Escríbenos y agende una cita</h2>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section class="seccion-formulario">
+        <div class="container">
+            <div class="formulario-contenedor">
+                <form id="contactForm" class="formulario">
+                    <div class="fila-doble">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input type="text" placeholder="Nombre" required>
+                        </div>
+                        <div class="campo">
+                            <label>Apellido</label>
+                            <input type="text" placeholder="Apellido" required>
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label>Selecciona la especialidad</label>
+                        <select required>
+                            <option value="" disabled selected>Selecciona una especialidad</option>
+                            <option value="implantes">Implantes</option>
+                            <option value="ortodoncia">Ortodoncia</option>
+                            <option value="estetica">Estética Dental</option>
+                            <option value="endodoncia">Endodoncia</option>
+                            <option value="periodoncia">Periodoncia</option>
+                            <option value="cirugia">Cirugía Maxilofacial</option>
+                            <option value="odontopediatria">Odontopediatría</option>
+                            <option value="rehabilitacion">Rehabilitación Oral</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label>Correo Electrónico</label>
+                        <input type="email" placeholder="tucorreo@ejemplo.com" required>
+                    </div>
+
+                    <div class="campo">
+                        <label>Celular</label>
+                        <input type="tel" placeholder="098 4177 986" required>
+                    </div>
+
+                    <div class="campo">
+                        <label>Mensaje</label>
+                        <textarea rows="4" placeholder="Tu mensaje"></textarea>
+                    </div>
+
+                    <div class="terminos">
+                        <input type="checkbox" id="terminos" required>
+                        <label for="terminos">Acepto los términos y condiciones</label>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">
+                        Enviar <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Título Dental Solutions -->
+    <section class="titulo-sedes">
+        <div class="container">
+            <h2>Dentalsolutions</h2>
+            <p class="subtitulo">DENTAL SOLUTIONS</p>
+            <p class="lema">Vuelve a Sonreír</p>
+        </div>
+    </section>
+
+    <!-- Grid de sedes -->
+    <section class="seccion-sedes">
+        <div class="container">
+            <div class="grid-sedes">
+                <!-- MATRIZ -->
+                <div class="tarjeta-sede">
+                    <h3>DENTALSOLUTIONS MATRIZ</h3>
+                    <p class="direccion">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Alberto Mena Caamaño E13-14 y Av. Coruña Edificio Aura P/B - Sector González Suárez
+                    </p>
+                    <p class="telefono">
+                        <i class="fas fa-phone-alt"></i>
+                        Telf.: (02) 5007-731 / cel. 099 8122320
+                    </p>
+                    <p class="email">
+                        <i class="far fa-envelope"></i>
+                        dentalsolutions_correo@hotmail.com
+                    </p>
+                    <div class="horarios">
+                        <h4>HORARIOS</h4>
+                        <p>Lunes a Viernes: 08:00 a 13:00 / 14:00 a 19:00</p>
+                        <p>Sábados: 09:00 a 13:00</p>
+                    </div>
+                    <button class="btn-llegar" onclick="abrirMapa('matriz')">
+                        <i class="fas fa-map"></i> Cómo llegar
+                    </button>
+                </div>
+
+                <!-- EXPRESS -->
+                <div class="tarjeta-sede">
+                    <h3>DENTALSOLUTIONS EXPRESS</h3>
+                    <p class="direccion">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Av. 6 de Diciembre N42-134 y Tomás de Berlanga, Sector Batán Bajo
+                    </p>
+                    <p class="telefono">
+                        <i class="fas fa-phone-alt"></i>
+                        Telf.: (02) 2465-191 / cel. 099 7439931
+                    </p>
+                    <p class="email">
+                        <i class="far fa-envelope"></i>
+                        fabimaderadorada@yahoo.es
+                    </p>
+                    <div class="horarios">
+                        <h4>HORARIOS</h4>
+                        <p>Lunes a Viernes: 09:00 a 13:00 / 15:00 a 19:00</p>
+                        <p>Sábados: 09:00 a 13:00</p>
+                    </div>
+                    <button class="btn-llegar" onclick="abrirMapa('express')">
+                        <i class="fas fa-map"></i> Cómo llegar
+                    </button>
+                </div>
+
+                <!-- ORTHODIAGNOSTIC 3D -->
+                <div class="tarjeta-sede">
+                    <h3>ORTHODIAGNOSTIC 3D</h3>
+                    <p class="direccion">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Av. González Suárez N32 - 203 y Alberto Mena
+                    </p>
+                    <p class="telefono">
+                        <i class="fas fa-phone-alt"></i>
+                        Telf.: (02) 2239-973 / cel. 0998431392
+                    </p>
+                    <p class="email">
+                        <i class="far fa-envelope"></i>
+                        orthodiagnostic3d@gmail.com
+                    </p>
+                    <div class="horarios">
+                        <h4>HORARIOS</h4>
+                        <p>Lunes a Viernes: 09:00 a 13:00 / 15:00 a 18:00</p>
+                        <p>Sábados: 09:00 a 13:00</p>
+                    </div>
+                    <button class="btn-llegar" onclick="abrirMapa('ortho')">
+                        <i class="fas fa-map"></i> Cómo llegar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal del mapa -->
+    <div id="mapModal" class="modal">
+        <div class="modal-contenido">
+            <button class="cerrar-modal" onclick="cerrarMapa()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="map-container" class="mapa-modal"></div>
+        </div>
+    </div>
+
+    <!-- WhatsApp flotante -->
+    <a href="https://wa.me/5984177986" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #192E59, #055490, #086cb0);
+            color: white;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: #055490;
+            padding: 12px 0;
+            font-size: 14px;
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+        }
+
+        .appointment-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Header */
+        header {
+            background: #055490;
+            padding: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            font-size: 40px;
+            font-weight: 400;
+            color: white;
+            line-height: 1;
+        }
+
+        .logo span {
+            color: #7ed4d0;
+            font-weight: 300;
+        }
+
+        .logo-sub {
+            font-size: 13px;
+            color: #7ed4d0;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #7ed4d0;
+        }
+
+        .btn-agendar-nav {
+            background-color: #325fb9 !important;
+            padding: 10px 25px !important;
+            border-radius: 30px;
+            font-weight: 600 !important;
+        }
+
+        .btn-agendar-nav:hover {
+            background-color: #254a94 !important;
+            color: white !important;
+        }
+
+        /* Título principal */
+        .titulo-principal {
+            padding: 60px 0 20px;
+            text-align: center;
+        }
+
+        .titulo-principal h2 {
+            font-size: 32px;
+            font-weight: 600;
+            color: white;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .titulo-principal h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: #7ed4d0;
+            border-radius: 2px;
+        }
+
+        /* Formulario */
+        .seccion-formulario {
+            padding: 20px 0 50px;
+        }
+
+        .formulario-contenedor {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .fila-doble {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .campo {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .campo label {
+            color: #192E59;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .campo input,
+        .campo select,
+        .campo textarea {
+            padding: 14px 16px;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+            background: white;
+            color: #333;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            transition: all 0.3s;
+        }
+
+        .campo input:focus,
+        .campo select:focus,
+        .campo textarea:focus {
+            outline: none;
+            border-color: #325fb9;
+            box-shadow: 0 0 0 3px rgba(50, 95, 185, 0.1);
+        }
+
+        .campo select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23325fb9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+        }
+
+        .terminos {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 10px 0;
+        }
+
+        .terminos input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #325fb9;
+            cursor: pointer;
+        }
+
+        .terminos label {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .btn-enviar {
+            background: #325fb9;
+            color: white;
+            border: none;
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: 1px solid transparent;
+        }
+
+        .btn-enviar:hover {
+            background: #254a94;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(50, 95, 185, 0.3);
+        }
+
+        /* Título sedes */
+        .titulo-sedes {
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+
+        .titulo-sedes h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .subtitulo {
+            color: #7ed4d0;
+            font-size: 16px;
+            letter-spacing: 2px;
+            margin: 5px 0;
+            font-weight: 500;
+        }
+
+        .lema {
+            font-size: 14px;
+            color: rgba(255,255,255,0.8);
+        }
+
+        /* Grid de sedes */
+        .seccion-sedes {
+            padding: 20px 0 60px;
+        }
+
+        .grid-sedes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .tarjeta-sede {
+            background: white;
+            border-radius: 20px;
+            padding: 30px 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .tarjeta-sede:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 35px rgba(50, 95, 185, 0.3);
+            border-color: #325fb9;
+        }
+
+        .tarjeta-sede h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #192E59;
+            text-align: center;
+            border-bottom: 2px solid #7ed4d0;
+            padding-bottom: 12px;
+        }
+
+        .tarjeta-sede p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .tarjeta-sede i {
+            color: #325fb9;
+            width: 18px;
+            margin-top: 3px;
+        }
+
+        .horarios {
+            margin: 25px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            border-left: 4px solid #7ed4d0;
+        }
+
+        .horarios h4 {
+            color: #192E59;
+            font-size: 14px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .horarios p {
+            margin-bottom: 8px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .btn-llegar {
+            width: 100%;
+            padding: 14px;
+            background: transparent;
+            border: 2px solid #325fb9;
+            color: #325fb9;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn-llegar:hover {
+            background: #325fb9;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(50, 95, 185, 0.3);
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-contenido {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            position: relative;
+            animation: modalEntrada 0.3s ease;
+        }
+
+        @keyframes modalEntrada {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .cerrar-modal {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width: 40px;
+            height: 40px;
+            background: #325fb9;
+            border: none;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid white;
+            z-index: 10;
+            transition: all 0.3s;
+        }
+
+        .cerrar-modal:hover {
+            background: #7ed4d0;
+            transform: rotate(90deg);
+        }
+
+        .mapa-modal {
+            width: 100%;
+            height: 400px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .mapa-modal iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            text-decoration: none;
+            z-index: 1000;
+            transition: all 0.3s;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+            border: 2px solid white;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1) rotate(360deg);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .grid-sedes {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .fila-doble {
+                grid-template-columns: 1fr;
+            }
+            
+            .grid-sedes {
+                grid-template-columns: 1fr;
+                max-width: 450px;
+                margin: 0 auto;
+            }
+            
+            .titulo-principal h2 {
+                font-size: 26px;
+            }
+            
+            .formulario-contenedor {
+                padding: 25px;
+            }
+            
+            .mapa-modal {
+                height: 300px;
+            }
+        }
+    </style>
+
+    <script>
+        const mapas = {
+            matriz: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.789962046723!2d-78.524962!3d-0.22985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMTMnNDcuNSJTIDc4wrAzMScyOS44Ilc!5e0!3m2!1ses!2sec!4v1620000000000!5m2!1ses!2sec',
+            express: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.789962046723!2d-78.524962!3d-0.22985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMTMnNDcuNSJTIDc4wrAzMScyOS44Ilc!5e0!3m2!1ses!2sec!4v1620000000000!5m2!1ses!2sec',
+            ortho: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.789962046723!2d-78.524962!3d-0.22985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMTMnNDcuNSJTIDc4wrAzMScyOS44Ilc!5e0!3m2!1ses!2sec!4v1620000000000!5m2!1ses!2sec'
+        };
+
+        function abrirMapa(sede) {
+            document.getElementById('map-container').innerHTML = `<iframe src="${mapas[sede]}" allowfullscreen="" loading="lazy"></iframe>`;
+            document.getElementById('mapModal').style.display = 'flex';
+        }
+
+        function cerrarMapa() {
+            document.getElementById('mapModal').style.display = 'none';
+            document.getElementById('map-container').innerHTML = '';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('mapModal');
+            if (event.target == modal) {
+                cerrarMapa();
+            }
+        }
+
+        document.getElementById('mobileBtn').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Mensaje enviado con éxito!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

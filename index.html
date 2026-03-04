@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra superior mejorada -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-left">
+                <i class="fas fa-phone-alt"></i>
+                <span class="phone-numbers">
+                    <span class="phone-item"><strong>Matriz:</strong> 098 4177 986 / 099 8122 320</span>
+                    <span class="phone-separator">|</span>
+                    <span class="phone-item"><strong>Sucursal:</strong> 099 7439 931</span>
+                </span>
+            </div>
+            <div class="top-bar-right">
+                <span class="email-top">
+                    <i class="far fa-envelope"></i> info@dentalsolutions.com
+                </span>
+                <a href="agendar.html" class="appointment-link">
+                    <i class="far fa-calendar-alt"></i> Agendar cita
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header con logo clickeable -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo-link">
+                <div class="logo-container">
+                    <h1 class="logo-dental">DentalSolutions</h1>
+                    <p class="logo-vuelve">Vuelve a Sonreír</p>
+                </div>
+            </a>
+
+            <!-- Menú hamburguesa móvil -->
+            <div class="mobile-menu-btn" id="mobileBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navegación principal -->
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-links">
+                    <li><a href="staff1.html">Staff</a></li>
+                    <li><a href="especialidades.html">Especialidades</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="agendar.html" class="btn-agendar-nav">AGENDAR</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <!-- TEXTO A LA IZQUIERDA -->
+            <div class="hero-text-left">
+                <p class="hero-line-1">Gracias por permitirnos</p>
+                <h1 class="hero-line-2">Diseñar su</h1>
+                <h2 class="hero-line-3">Sonrisa</h2>
+            </div>
+            
+            <!-- IMAGEN A LA DERECHA -->
+            <div class="hero-image-right">
+                <div class="image-emerge">
+                    <img src="/img/sonrisa.png" alt="Mujer sonriente" class="hero-image-emerge">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp flotante -->
+    <a href="https://wa.me/5984177986" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Menú móvil
+        document.getElementById('mobileBtn').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

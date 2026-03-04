@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Solutions - Agendar Cita</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra superior -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-left">
+                <i class="fas fa-phone-alt"></i>
+                <span>Llamanos Matriz 0984177986 - 0998122320 / Sucursal 0997439931</span>
+            </div>
+            <span>dentalsolutions_correo@hotmail.com</span>
+            <a href="agendar.html" class="appointment-link">
+                Agendar cita <i class="far fa-calendar-alt"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Header con logo clickeable -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo-link">
+                <div class="logo-wrapper">
+                    <div class="logo">
+                        dental<span>so</span>
+                    </div>
+                    <div class="logo-sub">Dentalsolutions</div>
+                </div>
+            </a>
+
+            <div class="mobile-menu-btn" id="mobileBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-links">
+                    <li><a href="staff1.html">Staff</a></li>
+                    <li><a href="especialidades.html">Especialidades</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="agendar.html" class="btn-agendar-nav active">AGENDAR</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Título de la página -->
+    <section class="titulo-pagina">
+        <div class="container">
+            <h2>Agenda tu cita</h2>
+        </div>
+    </section>
+
+    <!-- Contenedor principal simétrico -->
+    <section class="seccion-principal">
+        <div class="container">
+            <div class="grid-simetrico">
+                <!-- Formulario -->
+                <div class="card card-formulario">
+                    <div class="card-header">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Completa tus datos</h3>
+                    </div>
+                    <form id="agendarForm" class="formulario">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input type="text" placeholder="Nombre" required>
+                        </div>
+
+                        <div class="campo">
+                            <label>Apellido</label>
+                            <input type="text" placeholder="Apellido" required>
+                        </div>
+
+                        <div class="campo">
+                            <label>Selecciona la especialidad</label>
+                            <select required>
+                                <option value="" disabled selected>Selecciona una especialidad</option>
+                                <option value="implantes">Implantes</option>
+                                <option value="ortodoncia">Ortodoncia</option>
+                                <option value="estetica">Estética Dental</option>
+                                <option value="endodoncia">Endodoncia</option>
+                                <option value="periodoncia">Periodoncia</option>
+                                <option value="cirugia">Cirugía Maxilofacial</option>
+                                <option value="odontopediatria">Odontopediatría</option>
+                                <option value="rehabilitacion">Rehabilitación Oral</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label>Correo Electrónico</label>
+                            <input type="email" placeholder="tucorreo@ejemplo.com" required>
+                        </div>
+
+                        <div class="campo">
+                            <label>Celular</label>
+                            <input type="tel" placeholder="098 4177 986" required>
+                        </div>
+
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea rows="4" placeholder="Tu mensaje"></textarea>
+                        </div>
+
+                        <div class="terminos">
+                            <input type="checkbox" id="terminos" required>
+                            <label for="terminos">Acepto los términos y condiciones</label>
+                        </div>
+
+                        <button type="submit" class="btn-enviar">
+                            Enviar <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Información importante -->
+                <div class="card card-info">
+                    <div class="card-header">
+                        <i class="fas fa-info-circle"></i>
+                        <h3>Información importante</h3>
+                    </div>
+                    <ul class="lista-info">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Confirmaremos tu cita vía llamada o WhatsApp</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Llega 10 minutos antes de tu cita</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Trae tu cédula y carnet de seguro (si aplica)</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Puedes cancelar o reagendar hasta 24h antes</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contacto directo -->
+                <div class="card card-contacto">
+                    <div class="card-header">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Contacto directo</h3>
+                    </div>
+                    <div class="contacto-items">
+                        <div class="contacto-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <span class="contacto-label">Teléfono:</span>
+                                <span class="contacto-valor">098 4177 986</span>
+                            </div>
+                        </div>
+                        <div class="contacto-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <span class="contacto-label">WhatsApp:</span>
+                                <span class="contacto-valor">098 4177 986</span>
+                            </div>
+                        </div>
+                        <div class="contacto-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="contacto-label">Email:</span>
+                                <span class="contacto-valor">citas@dentalsolutions.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp flotante -->
+    <a href="https://wa.me/5984177986" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #192E59, #055490, #086cb0);
+            color: white;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: #055490;
+            padding: 12px 0;
+            font-size: 14px;
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+        }
+
+        .appointment-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Header */
+        header {
+            background: #055490;
+            padding: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            font-size: 40px;
+            font-weight: 400;
+            color: white;
+            line-height: 1;
+        }
+
+        .logo span {
+            color: #7ed4d0;
+            font-weight: 300;
+        }
+
+        .logo-sub {
+            font-size: 13px;
+            color: #7ed4d0;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #7ed4d0;
+        }
+
+        .btn-agendar-nav {
+            background-color: #325fb9 !important;
+            padding: 10px 25px !important;
+            border-radius: 30px;
+            font-weight: 600 !important;
+        }
+
+        /* Título página */
+        .titulo-pagina {
+            padding: 60px 0 20px;
+            text-align: center;
+        }
+
+        .titulo-pagina h2 {
+            font-size: 32px;
+            font-weight: 600;
+            color: white;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .titulo-pagina h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: #7ed4d0;
+            border-radius: 2px;
+        }
+
+        /* Grid simétrico - 3 columnas iguales */
+        .grid-simetrico {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin: 30px 0 60px;
+        }
+
+        /* Cards base - todas iguales */
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Header de cards */
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #7ed4d0;
+            padding-bottom: 15px;
+        }
+
+        .card-header i {
+            font-size: 22px;
+            color: #325fb9;
+        }
+
+        .card-header h3 {
+            color: #192E59;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        /* Formulario */
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .campo {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .campo label {
+            color: #192E59;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .campo input,
+        .campo select,
+        .campo textarea {
+            padding: 12px 16px;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+            background: white;
+            color: #333;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            transition: all 0.3s;
+        }
+
+        .campo input:focus,
+        .campo select:focus,
+        .campo textarea:focus {
+            outline: none;
+            border-color: #325fb9;
+            box-shadow: 0 0 0 3px rgba(50, 95, 185, 0.1);
+        }
+
+        .campo select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23325fb9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+        }
+
+        .terminos {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 10px 0;
+        }
+
+        .terminos input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #325fb9;
+            cursor: pointer;
+        }
+
+        .terminos label {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .btn-enviar {
+            background: #325fb9;
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn-enviar:hover {
+            background: #254a94;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(50, 95, 185, 0.3);
+        }
+
+        /* Lista información */
+        .lista-info {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .lista-info li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .lista-info li i {
+            color: #7ed4d0;
+            font-size: 16px;
+            margin-top: 2px;
+        }
+
+        /* Contacto items */
+        .contacto-items {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .contacto-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contacto-item i {
+            font-size: 18px;
+            color: #325fb9;
+            width: 24px;
+        }
+
+        .contacto-item div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contacto-label {
+            font-size: 13px;
+            color: #7ed4d0;
+            font-weight: 500;
+        }
+
+        .contacto-valor {
+            font-size: 15px;
+            color: #192E59;
+            font-weight: 600;
+        }
+
+        /* WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            text-decoration: none;
+            z-index: 1000;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+            border: 2px solid white;
+            transition: all 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1) rotate(360deg);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .grid-simetrico {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .card-formulario {
+                grid-column: span 2;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .grid-simetrico {
+                grid-template-columns: 1fr;
+            }
+            
+            .card-formulario {
+                grid-column: span 1;
+            }
+            
+            .card {
+                padding: 25px;
+            }
+            
+            .titulo-pagina h2 {
+                font-size: 26px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 20px;
+            }
+        }
+    </style>
+
+    <script>
+        document.getElementById('mobileBtn').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        document.getElementById('agendarForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Cita agendada con éxito! Te contactaremos para confirmar.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
